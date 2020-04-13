@@ -1,0 +1,276 @@
+<html lang="en">
+<head>
+<title>小程序注册</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style type="text/css">
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html {
+    display: block;
+    color: -internal-root-color;
+}
+html[Attributes Style] {
+    -webkit-locale: "en";
+}
+body, html {
+    height: 100%;
+    font-family: Montserrat-Regular, sans-serif;
+}
+title {
+    display: none;
+}
+.limiter {
+    width: 100%;
+    margin: 0 auto;
+}
+.container-login100 {
+    width: 100%;
+    min-height: 100vh;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+}
+.container-login100::before {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #005bea;
+    background: -webkit-linear-gradient(bottom, #005bea, #00c6fb);
+    background: -o-linear-gradient(bottom, #005bea, #00c6fb);
+    background: -moz-linear-gradient(bottom, #005bea, #00c6fb);
+    background: linear-gradient(bottom, #005bea, #00c6fb);
+    opacity: 0.9;
+}
+.wrap-login100 {
+    width: 390px;
+    background: transparent;
+}
+.p-b-30 {
+    padding-bottom: 30px;
+}
+.p-t-190 {
+    padding-top: 190px;
+}
+.login100-form {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.login100-form-avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.login100-form-avatar img {
+    width: 100%;
+}
+.login100-form-title {
+    font-family: Montserrat-ExtraBold;
+    font-size: 24px;
+    color: #fff;
+    line-height: 1.2;
+    text-align: center;
+    width: 100%;
+    display: block;
+}
+.p-b-45 {
+    padding-bottom: 45px;
+}
+.p-t-20 {
+    padding-top: 20px;
+}
+.validate-input {
+    position: relative;
+}
+.wrap-input100 {
+    position: relative;
+    width: 100%;
+    z-index: 1;
+}
+.m-b-10 {
+    margin-bottom: 10px;
+}
+.input100 {
+    font-family: Montserrat-Bold;
+    font-size: 15px;
+    line-height: 1.2;
+    color: #333333;
+    display: block;
+    width: 100%;
+    background: #fff;
+    height: 50px;
+    border-radius: 25px;
+    padding: 0 30px 0 53px;
+}
+input {
+    outline: none;
+    border: none;
+}
+.focus-input100 {
+    display: block;
+    position: absolute;
+    border-radius: 25px;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0px 0px 0px 0px;
+    color: rgba(0,91,234, 0.6);
+}
+.symbol-input100 {
+    font-size: 15px;
+    color: #999999;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    border-radius: 25px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding-left: 30px;
+    pointer-events: none;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+}
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.fa-user:before {
+    content: "\f007";
+}
+.container-login100-form-btn {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.p-t-10 {
+    padding-top: 10px;
+}
+.login100-form-btn {
+    font-family: Montserrat-Bold;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #e0e0e0;
+    width: 100%;
+    height: 50px;
+    border-radius: 25px;
+    background: #333333;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 25px;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+    position: relative;
+    z-index: 1;
+}
+button {
+    outline: none !important;
+    border: none;
+    background: transparent;
+}
+.login100-form-btn::before {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    top: 0;
+    left: 0;
+    background: #005bea;
+    background: -webkit-linear-gradient(left, #005bea, #00c6fb);
+    background: -o-linear-gradient(left, #005bea, #00c6fb);
+    background: -moz-linear-gradient(left, #005bea, #00c6fb);
+    background: linear-gradient(left, #005bea, #00c6fb);
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+    opacity: 0;
+}
+</style>
+
+
+</head>
+
+<body>
+
+    <div class="limiter">
+        <div class="container-login100">
+            <div class="wrap-login100 p-t-190 p-b-30">
+                <div class="login100-form validate-form">
+                    <div class="login100-form-avatar">
+                        <img src="./fail.jpg" alt="AVATAR">
+                    </div>
+					<div class="login100-form-title p-t-20 p-b-45" id="bar"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+	<script type="text/javascript">
+	var message = GetQueryString("message");
+	function GetQueryString(name) {
+  	var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+  	var r = window.location.search.substr(1).match(reg);
+  	if (r != null) {
+    	return decodeURI(r[2]);
+  	}
+  	return null;
+    }
+	document.getElementById('bar').innerHTML = message;
+	</script>
+</body>
+</html>

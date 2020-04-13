@@ -1,0 +1,49 @@
+@bgColor:#1adcff;
+
+html,body,#root{
+    width: 100%;
+    height: 100%;
+}
+#root{
+    overflow: auto;
+    background-image: url(../imgs/denglu.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    min-height: 930px;
+    #login_div{
+        margin-left: 37.8%;
+        margin-top: 320px;
+        .antd-pro-login-login{
+            margin-left: 5%;
+            padding-top: 100px;
+        }
+        .ant-input{
+            width: 28%;
+            height: 46px;
+            border: @bgColor 1px solid !important;
+            color: black !important;
+            margin-left: 10px;
+        }
+        .has-error .ant-input, .has-error .ant-input:hover{
+            border: @bgColor 1px solid !important;
+        }
+        .login_btn{
+            margin-top: 10px;
+            width: 28%;
+            background-color: @bgColor;
+            border: none;
+            height: 50px;
+            font-size: 20px;
+            color: #0a3d75;
+            margin-left: 10px;
+        }
+        .antd-pro-login-login .antd-pro-login-prefixIcon {
+            font-size: 24px;
+            color: #1adcff;
+        }
+        .has-error .ant-form-explain, .has-error .ant-form-split{
+            color: #f5222d;
+            margin-left: 10px;
+        }
+    }
+}

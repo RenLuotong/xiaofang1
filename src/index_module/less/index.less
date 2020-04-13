@@ -1,0 +1,98 @@
+html,body,#root{
+    width: 100%;
+    height: 100%;
+}
+#root{
+    min-width: 1200px;
+    height: 100%;
+    .hidden_col{
+        display: none;
+    }
+    .layout_div{
+        height: 100%;
+        background-color: #3151B4;
+        #header_div{
+            height: 90px;
+            background-color: #3151B4;
+            #header_left{
+                height: 90px;
+                background-image: url(../imgs/xf2.png);
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+                #header_right{
+                    cursor:pointer;
+                    margin-right: 40px;
+                    background-position-y: 32px;
+                    float: right;
+                    width: 100px;
+                    height: 90px;
+                    background-image: url(../imgs/logout.png);
+                    background-repeat: no-repeat;
+                }
+            }
+        }
+        #line{
+            height: 3px;
+            width: 100%;
+            border-top: 2px solid #0070FF;
+            float: left;
+        }
+        #root_content_div{
+            height: 70%;
+            width: 100%;
+            display: flex;
+            align-items: center; /*定义div的子元素垂直居中*/
+            justify-content: center; /*定义div的子元素水平居中*/
+            #content {
+                width: 800px;
+                height: 300px;
+//              background: orange;
+                #span {
+                    font-size: 18px;
+                    color: white;
+                    margin-left: 10px;
+                }
+                #content_img1 {
+                    cursor:pointer;
+                    float: left;
+                    width: 186px;
+                    height: 196px;
+                    background-image: url(../imgs/1grfhzbgl.png);
+                    background-repeat: no-repeat;
+                    background-size: 100%;
+                    margin: 5px;
+                }
+                #content_img2 {
+                    cursor:pointer;
+                    float: left;
+                    width: 186px;
+                    height: 196px;
+                    background-image: url(../imgs/2clyqcgl.png);
+                    background-repeat: no-repeat;
+                    background-size: 100%;
+                    margin: 5px;
+                }
+                #content_img3 {
+                    cursor:pointer;
+                    float: left;
+                    width: 186px;
+                    height: 196px;
+                    background-image: url(../imgs/3yqgl.png);
+                    background-repeat: no-repeat;
+                    background-size: 100%;
+                    margin: 5px;
+                }
+                #content_img4 {
+                    cursor:pointer;
+                    float: left;
+                    width: 186px;
+                    height: 196px;
+                    background-image: url(../imgs/4rygl.png);
+                    background-repeat: no-repeat;
+                    background-size: 100%;
+                    margin: 5px;
+                }
+            }
+        }
+    }
+}

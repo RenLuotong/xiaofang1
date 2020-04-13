@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="renderer" content="webkit">
+	<title>消防救援一体化平台</title>
+	<!--<link rel="stylesheet" type="text/css" href="css/vendors-dadui-login-xitong-zhidui-zhongdui-zhongdui_tongji.css"/>-->
+	<link rel="stylesheet" type="text/css" href="css/vendors-login-zhongdui_tongji.css" />
+	<link rel="stylesheet" type="text/css" href="css/vendors-zhongdui_tongji.css" />
+	<link rel="stylesheet" type="text/css" href="css/zhongdui_tongji.css" />
+	<link rel="stylesheet" href="https://a.amap.com/jsapi_demos/static/demo-center/css/demo-center.css" />
+	<script type="text/javascript" src="common/polyfill.min.js"></script>
+	<link rel="icon" href="./favicon.png" type="image/x-icon" />
+	<link rel="shortcut icon" href="./favicon.png" type="image/x-icon" />
+</head>
+
+<body id='body_div'>
+	<div id='root' style="height: 100%;">
+	</div>
+	<script src="common/jquery.min.js"></script>
+	<script src="common/layer.js"></script>
+	<script src="common/FileSaver.js"></script>
+	<script src="common/jquery.wordexport.js"></script>
+	<script src="common/common.js"></script>
+	<script src="common/md5.js"></script>
+	<script src="common/html2pdf.bundle.min.js"></script>
+	<script
+	src="https://webapi.amap.com/maps?v=1.4.15&key=a2cb74e78502c154bafb36f812d52b4e"></script>
+	<script>
+		var path = "js/zhongdui_tongji.bundle.js?v=" + (new Date()).getTime();
+		document.write('<scr' + 'ipt src="' + path + '"></scr' + 'ipt>');
+	</script>
+
+</body>
+
+</html>

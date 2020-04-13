@@ -1,0 +1,386 @@
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.tj_gongzuozhixu {
+  background: url("../../imgs/tongji_gzzxbj.jpg") no-repeat left center;
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
+  .shijianzhoubox {
+    height: 300px;
+    overflow-y: scroll;
+    padding: 5% 0 0 10%;
+    &::-webkit-scrollbar-track {
+      .scrollbar_track();
+    }
+    &::-webkit-scrollbar {
+      .scrollbar();
+    }
+    &::-webkit-scrollbar-thumb {
+      .scrollbar_thumb();
+    }
+  }
+  .shijianzhou {
+    font-size: 17px;
+    color: #ddfaff;
+    .ant-timeline-item {
+      padding: 0 0 5px;
+    }
+    p {
+      display: inline-block;
+      line-height: 42px;
+      width: 60%;
+      background: url("../../imgs/tj_gzzx_shijian.png") no-repeat left center;
+      -webkit-background-size: 100% 100%;
+      background-size: 100% 100%;
+      margin-left: 15px;
+      padding-left: 5%;
+      color: #03051d;
+      font-size: 17px;
+    }
+    .ant-timeline-item-head {
+      top: 12px;
+    }
+  }
+  .shijianzhou.pianyi {
+    p {
+      transform: translateY(17px);
+    }
+    .ant-timeline-item-head {
+      top: 0px;
+    }
+  }
+  .tj_gongzuozhixu_left {
+    background: url("../../imgs/tongji_gzzx_juxing.png") no-repeat left center;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+  }
+  .tj_kebiao {
+    text-align: center;
+    padding-top: 3%;
+  }
+
+  .scrollbar_track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #f5f5f5;
+  }
+  .scrollbar {
+    width: 2px;
+    background-color: rgba(0, 0, 0, 0);
+  }
+  .scrollbar_thumb {
+    background-color: #000000;
+    border: none;
+  }
+  .tj_gongzuozhixu_right {
+    background: url("../../imgs/tongji_gzzx_juxing.png") no-repeat left center;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+
+    .tj_gzzx_fkxxbox {
+      width: 404px;
+      height: 263px;
+      margin: 3% auto 0;
+      background: url("../../imgs/tj_gzzx_fkxx.png") no-repeat left top;
+      .fangkeimgs {
+        text-align: center;
+        padding-top: 16%;
+        .fangkeimg{
+          width: 117px;
+          height: 117px;
+          margin: 0 auto;
+          background: url("../../imgs/tj_zhandouyuanimg.png") no-repeat left top;
+        }
+        p {
+          font-size: 18px;
+          color: #fff;
+          line-height: 28px;
+          padding-top: 2%;
+        }
+      }
+    }
+
+    .yujingtishi_content {
+      padding-right: 20px;
+      height: 180px;
+      overflow: auto;
+      font-size: 16px;
+      &::-webkit-scrollbar-track {
+        .scrollbar_track();
+      }
+      &::-webkit-scrollbar {
+        .scrollbar();
+      }
+      &::-webkit-scrollbar-thumb {
+        .scrollbar_thumb();
+      }
+      .zhongjian_span {
+        padding-left: 30px;
+      }
+      .float_right {
+        float: right;
+      }
+      .mixins(@color) {
+        position: relative;
+        color: @color;
+        padding-left: 15px;
+        line-height: 35px;
+        height: 35px;
+        &:before {
+          width: 4px;
+          height: 4px;
+          content: "";
+          background-color: @color;
+          top: 10px;
+          left: 0;
+          display: block;
+          position: absolute;
+        }
+      }
+      .zhiding {
+        .mixins(#f3b741);
+      }
+      .tishi {
+        .mixins(#94ea76);
+      }
+      .yujing {
+        .mixins(#ef2d2d);
+      }
+    }
+  }
+}
+
+.tongjie_progress1 {
+  width: 80px;
+  margin-right: 20px;
+  .ant-progress-inner {
+    width: 100% !important;
+    height: 100% !important;
+  }
+  .ant-progress-circle-trail {
+    stroke: #152bae !important;
+    stroke-width: 1;
+  }
+  .ant-progress-text {
+    color: #d804ff !important;
+  }
+}
+.tongjie_progress2 {
+  width: 80px;
+  margin-right: 20px;
+  .ant-progress-inner {
+    width: 100% !important;
+    height: 100% !important;
+  }
+  .ant-progress-circle-trail {
+    stroke: #fe7c1b !important;
+    stroke-width: 1;
+  }
+  .ant-progress-text {
+    color: #fe7c1b !important;
+  }
+}
+.tongjie_progress3 {
+  width: 80px;
+  margin-right: 20px;
+  .ant-progress-inner {
+    width: 100% !important;
+    height: 100% !important;
+  }
+  .ant-progress-circle-trail {
+    stroke: #00faff !important;
+    stroke-width: 1;
+  }
+  .ant-progress-text {
+    color: #00faff !important;
+  }
+}
+.tongjie_progress4 {
+  width: 80px;
+  margin-right: 20px;
+  .ant-progress-inner {
+    width: 100% !important;
+    height: 100% !important;
+  }
+  .ant-progress-circle-trail {
+    stroke: #03e925 !important;
+    stroke-width: 1;
+  }
+  .ant-progress-text {
+    color: #03e925 !important;
+  }
+}
+
+.tj_wenzitop {
+  .tj_wenziP1 {
+    color: #fff;
+    font-size: 18px;
+  }
+  .tj_wenziP2 {
+    font-size: 30px;
+  }
+}
+
+.tj_gzzx_gongche {
+  .ant-progress-text {
+    color: #fff;
+  }
+  .ant-progress-circle-trail {
+    stroke: #203884 !important;
+  }
+  .tj_kongxiangongche {
+    text-align: center;
+    width: 100%;
+    height: 80px;
+    background: url("../../imgs/tj_gzzx_kxgc.png") no-repeat left top;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+    color: #fff;
+    line-height: 36px;
+  }
+  .tj_shiyongzhonggongche {
+    text-align: center;
+    width: 100%;
+    height: 80px;
+    background: url("../../imgs/tj_gzzx_syz.png") no-repeat left top;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+    color: #fff;
+    line-height: 56px;
+  }
+  .ant-progress {
+    width: 100px;
+    .ant-progress-inner {
+      width: 100% !important;
+      height: 100% !important;
+    }
+  }
+}
+
+.tj_gzzx_middle_box {
+  height: 100%;
+  background: url("../../imgs/tj_gzzx_zhongbj.png") no-repeat left top;
+  -webkit-background-size: 100%;
+  background-size: 100%;
+  margin-top: 3%;
+  .tj_gzzx_middle_top {
+    padding: 11% 0 5%;
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    font-size: 30px;
+    span {
+      font-size: 18px;
+    }
+    .tj_gzzx_middle_top1 {
+      color: #fff;
+      background: url("../../imgs/tj_gzzx_quanbu.png") no-repeat left top;
+      width: 180px;
+      height: 80px;
+      text-align: center;
+      margin: 0 4%;
+    }
+    .tj_gzzx_middle_top2 {
+      color: #fff;
+      background: url("../../imgs/tj_gzzx_zaiwei.png") no-repeat left top;
+      width: 180px;
+      height: 80px;
+      text-align: center;
+      margin: 0 4%;
+    }
+    .tj_gzzx_middle_top3 {
+      color: #fff;
+      background: url("../../imgs/tj_gzzx_waichu.png") no-repeat left top;
+      width: 180px;
+      height: 80px;
+      text-align: center;
+      margin: 0 4%;
+    }
+  }
+
+  .tj_gzzx_middles {
+    background: url("../../imgs/tj_gzzx_zhongbj2.png") no-repeat left top;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    height: 610px;
+    width: 820px;
+    .tj_huanbi_bottombox {
+      width: 100%;
+      height: 307px;
+      padding-top: 23px;
+      position: relative;
+      p {
+        font-size: 16px;
+        color: #fff;
+        position: absolute;
+        text-align: center;
+      }
+      .tj_huanbi_bottomp1 {
+        top: 32px;
+        left: 251px;
+      }
+      .tj_huanbi_bottomp2 {
+        top: 77px;
+        right: 245px;
+      }
+      .tj_huanbi_bottomp3 {
+        top: 132px;
+        right: 185px;
+      }
+      .tj_huanbi_bottomp4 {
+        top: 185px;
+        left: 91px;
+      }
+      .tj_huanbi_bottomp5 {
+        bottom: 6px;
+        right: 90px;
+      }
+    }
+  }
+
+  .tj_gzzx_middle_huanbi {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    .tj_huanbi_box {
+      width: 180px;
+      height: 127px;
+      margin: 0 4%;
+      font-size: 24px;
+      .tj_huanbi_div1 {
+        width: 146px;
+        margin: 0 auto;
+        height: 100%;
+        background: url("../../imgs/tj_gzzx_hb1.png") no-repeat left top;
+        color: #c444fb;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .tj_huanbi_div2 {
+        width: 146px;
+        margin: 0 auto;
+        height: 100%;
+        background: url("../../imgs/tj_gzzx_hb2.png") no-repeat left top;
+        color: #00e74f;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .tj_huanbi_div3 {
+        width: 146px;
+        margin: 0 auto;
+        height: 100%;
+        background: url("../../imgs/tj_gzzx_hb3.png") no-repeat left top;
+        color: #00edfe;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+}
+.ant-timeline-item-last > .ant-timeline-item-content {
+  min-height: 0;
+}
